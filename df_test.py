@@ -37,9 +37,9 @@ def test_create_dataframe(data, columns, types, rows_allowed):
     Boolean: Whether data passes all tests.
 
     """
-    passed = (sorted(data.columns.values.tolist()) == sorted(columns))
+    passed = sorted(data.columns.values.tolist()) == sorted(columns)
     if passed:
-        passed = data.dtypes.tolist() == types
+        passed = sorted(data.dtypes.tolist()) == sorted(types)
     if passed:
         passed = data.shape[0] >= rows_allowed
     return passed
