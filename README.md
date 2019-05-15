@@ -1,6 +1,8 @@
 # HW2 - Using Functions
 
-##### Grade: 6/7
+##### Final grade: 7/7  
+
+Grade: 6/7    
 
 -1: passed = data.dtypes.tolist() == types will return False even if all the columns are there but are in a different order
 
